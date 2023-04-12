@@ -9,4 +9,4 @@ you can use any webserver but to easily launch it you can use python with this c
 
 ------------
 
-### if you don't want to launch a webserver on your pc you can access our webserver via [this link](https://silent.lol "this link").
+### if you don't want to launch a webserver on your pc you can access our webserver via [this link](https://supe4cookie.github.io/connect-4/ "this link").
