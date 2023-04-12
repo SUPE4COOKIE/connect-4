@@ -1,0 +1,192 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+:root {
+    --tile-size: 0vh;
+    --a: #454372;
+    --b: #7A7D8C;
+    --c: #581c8c;
+}
+
+html, body {
+    width: 100%;
+    height:100%;
+  }
+  
+  body {
+      background: linear-gradient(-45deg, #7c99b4, #8eb8e5, #263B46, #454372);
+      background-size: 400% 400%;
+      animation: gradient 10s ease infinite;
+  }
+  
+  @keyframes gradient {
+      0% {
+          background-position: 0% 50%;
+      }
+      50% {
+          background-position: 100% 50%;
+      }
+      100% {
+          background-position: 0% 50%;
+      }
+  }
+
+h1 {
+    text-align: center;
+    font-size: 4vh;
+    margin: 2vh;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+}
+
+#board {
+    background-color: blue;
+    width: 100%;
+    height: 51.56vh;
+    max-width: 100%;
+    max-height: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: 3%;
+    margin: 0 auto;
+    margin-top: 2vh;
+}
+
+.infos {
+    width: 82.55vh;
+    height: 44.22vh;
+    background-color: var(--b);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1.5vh;
+    border: solid 0.3vh var(--a);
+    margin: 0 auto;
+}
+
+.tile {
+    background-color: white;
+    width: var(--tile-size);
+    height: var(--tile-size);
+    display: inline-block;
+    border-radius: 50%;
+    margin: 5px;
+}
+
+#score {
+    font-size: 1.96vh;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+}
+
+#pawncolor {
+    background-color: red;
+    width: 2.5vh;
+    height: 2.5vh;
+    border-radius: 50%;
+    border: solid 0.1vh black;
+}
+
+#chronometer {
+    font-size: 1.96vh;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+}
+
+.p2 {
+    font-size: 1.96vh;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+}
+
+.box {
+    background-color: var(--b);
+    width: 62vh;
+    height: 26vh;
+    border: solid 0.3vh var(--a);
+    border-radius: 1.5vh;
+    margin: 0 auto;  
+    margin-top: 2vh;
+}
+
+.btn {
+    display: block;
+    width: 18vh;
+    height: 3vh;
+    margin-top: 4vh;
+    margin-left: 22.2vh;
+    background-color: white;
+    color: var(--c);
+    border:solid 0.3vh var(--a);
+    border-radius: 0.5vh;
+    transition: all 0.5s ease;
+}
+
+.btn p {
+    text-align: center;
+    font-family: "Roboto", sans-serif;
+    font-size: 1.4vh;
+    margin-top: 0.4vh;
+    font-weight: bold
+}
+
+.btn:hover {
+    background-color: black;
+    border: solid 0.3vh var(--c);
+    cursor: pointer;
+    color: var(--b);
+}
+
+.btn2 {
+    display: block;
+    width: 18vh;
+    height: 3vh;
+    background-color: white;
+    color: var(--c);
+    border:solid 0.3vh var(--a);
+    border-radius: 0.5vh;
+    transition: all 0.5s ease;
+    margin-top: 0.4vh;
+}
+
+.btn2 p {
+    text-align: center;
+    font-family: "Roboto", sans-serif;
+    font-size: 1.4vh;
+    font-weight: bold
+}
+
+.btn2:hover {
+    background-color: black;
+    border: solid 0.3vh var(--c);
+    cursor: pointer;
+    color: var(--b);
+}
+
+input {
+    width: 18vh;
+    height: 2vh;
+    border:solid 0.3vh var(--a);
+    border-radius: 0.5vh;
+    text-align: center;
+    font-weight: bold;
+    color: var(--c);
+    transition: all ease 0.3s;
+    font-size: 1.4vh;
+}
+
+input:hover {
+    border: solid 0.3vh var(--c);
+}
+
+input:focus {
+    outline: none;
+    border: var(--c) 0.3vh solid;
+    background-color: black;
+    color: var(--b);
+}

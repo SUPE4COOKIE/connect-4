@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js" defer></script>
+</head>
+<body>
+    <h1>Puissance 4</h1>
+    <div class="container">
+
+        <div class="infos">
+            
+            <p class="p2">Changer la taille du plateau réinitialisera le score et le plateau !</p>
+            <br>
+            <label for="width"><p class="p2">Largeur : </p></label>
+            
+            <input type="number" id="width" name="width" value="7">
+            <br>
+            <label for="height"><p class="p2">Hauteur : </p></label>
+            
+            <input type="number" id="height" name="height" value="6">
+            <br>
+            <p id="score">0 - 0</p>
+            <br>
+            <div id="pawncolor"></div>
+            <br>
+            <p id="chronometer"></p>
+            <br>
+            <button class="btn2" onclick="window.location.reload();"><p>Réinitialiser</p></button>
+            <br>
+            <button class="btn2" onclick="game.NewGame()"><p>Nouvelle partie</p></button>
+            <br>
+        </div>
+        
+        <div id="board"></div>
+        
+        <div class="box">
+    
+            <a href="../index.html" style="text-decoration:none" type="button" class="btn"><p>Présentation</p></a>
+            <a href="../regles/index.html" style="text-decoration:none" type="button" class="btn"><p>Règles</p></a>
+            <a href="../scoring/index.html" style="text-decoration:none" type="button" class="btn"><p>Historiques des parties</p></a>
+        
+        </div>
+
+    </div>
+    <br>
+</body>
+</html>
